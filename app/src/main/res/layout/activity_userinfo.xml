@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    tools:ignore="MissingDefaultResource">
+    <!-- 标题-->
+    <TextView
+        android:id="@+id/TextTitle"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="false"
+        android:gravity="center"
+        android:text="用户信息" />
+    <!--用户名-->
+    <TableRow>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="用户名" />
+
+        <TextView
+            android:id="@+id/textUid"
+            style="@style/inputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:minWidth="200dp" />
+    </TableRow>
+    <!--旧密码-->
+    <TableRow>
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="旧密码" />
+
+        <EditText
+            android:id="@+id/textOld"
+            style="@style/inputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:inputType="textPassword"
+            android:minWidth="200dp"
+            android:singleLine="true" />
+    </TableRow>
+    <!--新密码-->
+    <TableRow>
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="新密码" />
+
+        <EditText
+            android:id="@+id/textNew"
+            style="@style/inputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:inputType="textPassword"
+            android:minWidth="200dp"
+            android:singleLine="true" />
+    </TableRow>
+    <!--确认密码-->
+    <TableRow>
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="确认密码" />
+
+        <EditText
+            android:id="@+id/textAgain"
+            style="@style/inputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:inputType="textPassword"
+            android:minWidth="200dp"
+            android:singleLine="true" />
+    </TableRow>
+    <!--电话号码-->
+    <TableRow>
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="电话号码" />
+
+        <EditText
+            android:id="@+id/textPhone"
+            style="@style/inputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:inputType="phone"
+            android:minWidth="200dp"
+            android:singleLine="true" />
+    </TableRow>
+    <!--通讯地址-->
+    <TableRow>
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="通讯地址" />
+
+        <EditText
+            android:id="@+id/textAddress"
+            style="@style/inputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:minWidth="200dp"
+            android:singleLine="true" />
+    </TableRow>
+    <!--登陆注册-->
+    <TableRow>
+
+        <Button
+            android:id="@+id/btnModify"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:minWidth="70dip"
+            android:onClick="modify"
+            android:text="修改" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dip"
+            android:text="返回" />
+    </TableRow>
+
+</TableLayout>

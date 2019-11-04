@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <!--空白填充-->
+    <View
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/diancan"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/diancan"/>
+
+        <ImageButton
+            android:id="@+id/caidan"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/caidan" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/grzx"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/grzx"/>
+        <ImageButton
+            android:id="@+id/login"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/login"/>
+    </LinearLayout>
+
+</GridLayout>

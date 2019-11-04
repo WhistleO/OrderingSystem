@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">点餐系统</string>
+    <string name="DSTitle">系统登录</string>
+    <string name="tvUid">账号</string>
+    <string name="edUid">请输入账号</string>
+    <string name="tvPwd">密码</string>
+    <string name="edPwd">请输入密码</string>
+    <string name="btnReg">注册</string>
+    <string name="btnLogin">登录</string>
+    <string name="cbRemember">记住我</string>
+    <string name="reg_note">请填写注册信息</string>
+    <string name="reg_name">用户名：</string>
+    <string name="reg_password">密码：</string>
+    <string name="reg_confirm">密码确认：</string>
+    <string name="reg_trueName">真实姓名：</string>
+    <string name="reg_age">年龄：</string>
+    <string name="reg_photo">头像</string>
+    <string name="reg_takePhoto">点击拍照</string>
+    <string name="reg_register">注册</string>
+    <string name="reg_back">返回登录</string>
+    <string name="reg_hint_name">请输入用户名</string>
+    <string name="reg_hint_password">请输入密码</string>
+    <string name="reg_hint_confirm">密码确认</string>
+    <string name="reg_hint_trueName">请输入真实姓名</string>
+    <string name="reg_hint_age">请输入年龄</string>
+    <string name="reg_sex">性别</string>
+    <string name="reg_error_userNameEmpty">用户名不能为空</string>
+    <string name="reg_error_passwordEmpty">密码不能为空</string>
+    <string name="reg_error_confirmEmpty">确认密码不能为空</string>
+    <string name="reg_error_confirmError">密码未确认</string>
+    <string name="reg_error_userNameConflict">用户名已存在</string>
+</resources>

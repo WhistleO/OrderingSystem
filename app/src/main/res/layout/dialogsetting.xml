@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    设置开关音乐    "
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageButton
+        android:id="@+id/music"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/shengyin" />
+
+    <Button
+        android:id="@+id/settingexit"
+        android:layout_width="60dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="确认" />
+</LinearLayout>

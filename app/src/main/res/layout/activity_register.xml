@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/reg_note"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/reg_note" />
+
+    <TextView
+        android:id="@+id/text_username"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_note"
+        android:layout_marginTop="15dp"
+        android:text="@string/reg_name" />
+
+    <EditText
+        android:id="@+id/reg_userName"
+        style="@style/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_username"
+        android:layout_toRightOf="@+id/text_username"
+        android:hint="@string/reg_hint_name" />
+
+
+    <TextView
+        android:id="@+id/text_password"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_username"
+        android:layout_marginTop="20dp"
+        android:text="@string/reg_password" />
+
+
+    <EditText
+        android:id="@+id/reg_passowrd"
+        style="@style/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_password"
+        android:layout_alignLeft="@+id/reg_userName"
+        android:layout_toRightOf="@+id/text_password"
+        android:hint="@string/reg_hint_password"
+        android:inputType="textPassword" />
+
+
+    <TextView
+        android:id="@+id/textConfirm"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_password"
+        android:layout_marginTop="20dp"
+        android:text="@string/reg_confirm" />
+
+
+    <EditText
+        android:id="@+id/reg_confirm"
+        style="@style/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textConfirm"
+        android:layout_alignLeft="@+id/reg_userName"
+        android:layout_toRightOf="@+id/textConfirm"
+        android:hint="@string/reg_hint_confirm"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textTrueName"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textConfirm"
+        android:layout_marginTop="20dp"
+        android:text="@string/reg_trueName" />
+
+    <EditText
+        android:id="@+id/reg_trueName"
+        style="@style/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTrueName"
+        android:layout_alignLeft="@+id/reg_userName"
+        android:layout_toRightOf="@+id/textTrueName"
+        android:gravity="center"
+        android:hint="@string/reg_hint_trueName" />
+
+    <TextView
+        android:id="@+id/textAge"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTrueName"
+        android:layout_marginTop="20dp"
+        android:text="@string/reg_age" />
+
+    <EditText
+        android:id="@+id/reg_age"
+        style="@style/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textAge"
+        android:layout_alignLeft="@+id/reg_userName"
+        android:layout_toRightOf="@+id/textAge"
+        android:gravity="center"
+        android:hint="@string/reg_hint_age"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textFavorite"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAge"
+        android:layout_marginTop="20dp"
+        android:text="爱好：" />
+
+    <CheckBox
+        android:id="@+id/tiyu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textFavorite"
+        android:layout_alignLeft="@+id/reg_userName"
+        android:layout_toRightOf="@+id/textFavorite"
+        android:text="体育" />
+
+    <CheckBox
+        android:id="@+id/yinyue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textFavorite"
+        android:layout_toRightOf="@+id/tiyu"
+        android:text="音乐" />
+
+    <CheckBox
+        android:id="@+id/lvyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textFavorite"
+        android:layout_toRightOf="@+id/yinyue"
+        android:text="旅游" />
+
+    <CheckBox
+        android:id="@+id/yuedu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textFavorite"
+        android:layout_toRightOf="@+id/lvyou"
+        android:text="阅读" />
+
+    <Button
+        android:id="@+id/reg_btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tiyu"
+        android:layout_toRightOf="@+id/tiyu"
+        android:text="@string/reg_register" />
+
+    <Button
+        android:id="@+id/reg_btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reg_btn_register"
+        android:layout_toRightOf="@+id/lvyou"
+        android:text="@string/reg_back" />
+
+</RelativeLayout>

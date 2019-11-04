@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/gr1">
+        <item
+            android:id="@+id/zt"
+            android:title="粘贴"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/mm"
+            android:title="重命名"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/copy"
+            android:title="复制"
+            app:showAsAction="collapseActionView" />
+    </group>
+</menu>
